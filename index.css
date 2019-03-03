@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+.button {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  font-size: 1rem;
+  padding: 14px 35px;
+  margin: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.button i {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.block {
+  display: block;
+}
+
+.rounded {
+  border-radius: 50px !important;
+}
+
+.button:disabled {
+  color: white;
+  border: 2px solid white;
+}
+
+.button:hover {
+  background: #000 radial-gradient(circle, transparent 1%, #000 1%) center center/15000%;
+}
+
+.button:active {
+  background-color: white;
+  background-size: 100%;
+  -webkit-transition: 0s ease-in-out;
+  transition: 0s ease-in-out;
+}
+
+.small {
+  padding: 6px 20px;
+  font-size: 0.8rem;
+}
+
+.small i {
+  color: #fff;
+  font-size: 0.6rem !important;
+}
+
+.big {
+  padding: 18px 60px;
+  font-size: 1.2rem;
+}
+
+.big i {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.filled {
+  background: #fff;
+  color: #000;
+}
+
+.filled i {
+  color: #000;
+  font-size: 0.8rem;
+}
+
+.filled:hover {
+  background: #fff radial-gradient(circle, transparent 1%, #fff 1%) center center/15000%;
+}
+
+.filled:active {
+  background-color: white;
+  background-size: 100%;
+  -webkit-transition: 0s ease-in-out;
+  transition: 0s ease-in-out;
+}
+
+.filled:disabled {
+  color: #000;
+  background: white;
+}
+
+.danger {
+  background: #000;
+  color: #ec2f4f;
+  border: 2px solid #ec2f4f;
+}
+
+.danger i {
+  color: #ec2f4f;
+}
+
+.danger:disabled {
+  color: #f2758a;
+  border: 2px solid #f2758a;
+}
+
+.danger:hover {
+  background: #000 radial-gradient(circle, transparent 1%, #000 1%) center center/15000%;
+}
+
+.danger:active {
+  background-color: #f9bbc6;
+  background-size: 100%;
+  -webkit-transition: 0s ease-in-out;
+  transition: 0s ease-in-out;
+}
+
+.danger-filled {
+  background: #ec2f4f;
+  color: #000;
+  border: 2px solid #ec2f4f;
+}
+
+.danger-filled i {
+  color: #000;
+}
+
+.danger-filled:disabled {
+  color: #000;
+  border: 2px solid #f2758a;
+  background: #f2758a;
+}
+
+.danger-filled:hover {
+  background: #ec2f4f radial-gradient(circle, transparent 1%, #ec2f4f 1%) center center/15000%;
+}
+
+.danger-filled:active {
+  background-color: #f05e77;
+  background-size: 100%;
+  -webkit-transition: 0s ease-in-out;
+  transition: 0s ease-in-out;
+}
+
+#container {
+  width: 80vw;
+  padding: 5vh 10vw;
+}
+
+form {
+  width: 100%;
+}
+
+.input {
+  width: 40%;
+  padding: 15px 3%;
+  margin: 1.6%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: 0px;
+  border-bottom: 1px solid white;
+  background: transparent;
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.input:disabled {
+  opacity: 0.4;
+  border-bottom: 2px solid white;
+}
+
+.full {
+  width: 89.5%;
+}
+
+.input option {
+  background: #fff;
+  color: #000;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+
+.bordered {
+  border-radius: 6px;
+  border: 1px solid white;
+}
+
+.bordered:focus {
+  border: 1px solid #fff;
+}
+
+.input-filled {
+  color: #000;
+  background: #fff;
+  border: 1px solid #000 !important;
+}
+
+.input-filled::-webkit-input-placeholder {
+  color: #000 !important;
+}
+
+.input-filled:-ms-input-placeholder {
+  color: #000 !important;
+}
+
+.input-filled::-ms-input-placeholder {
+  color: #000 !important;
+}
+
+.input-filled::placeholder {
+  color: #000 !important;
+}
+
+.input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.bold {
+  border-width: 2px;
+  font-weight: bold;
+}
+
+.bold:focus {
+  border-bottom: 2px solid #fff;
+}
+
+.label {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+}
+
+.label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.label:hover input ~ .radio {
+  background-color: white;
+}
+
+.label input:checked ~ .radio {
+  background-color: #fff;
+}
+
+.label input:disabled ~ .radio {
+  opacity: 0.5;
+  background-color: white;
+}
+
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.label input:checked ~ .radio:after {
+  display: block;
+}
+
+.label .radio:after {
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.checkbox {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 2px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.label:hover input ~ .checkbox {
+  background-color: white;
+}
+
+.label input:checked ~ .checkbox {
+  background-color: #fff;
+}
+
+.label input:disabled ~ .checkbox {
+  opacity: 0.5;
+  background-color: white;
+}
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.label input:checked ~ .checkbox:after {
+  display: block;
+}
+
+.label .checkbox:after {
+  left: 9px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.select-full {
+  width: 95%;
+}
+
+textarea {
+  display: block;
+}
+
+.table {
+  width: 100%;
+  padding: 2% 0;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.table thead tr th {
+  padding: 20px 15px;
+  color: #fff;
+}
+
+.table tbody tr td {
+  padding: 20px 15px;
+}
+
+.table-right {
+  text-align: right !important;
+}
+
+.table-center {
+  text-align: center !important;
+}
+
+.table-filled thead tr th {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.table-tbody-filled tbody tr td {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.table-bordered thead tr th {
+  border: 2px solid #fff;
+}
+
+.table-bordered tbody tr td {
+  border: 2px solid #fff;
+}
+
+.table-bordered-bottom thead tr th {
+  border-bottom: 2px solid #fff;
+}
+
+.table-bordered-bottom tbody tr td {
+  border-bottom: 2px solid #fff;
+}
+
+.table-tbody-bordered tbody tr td {
+  border: 2px solid #fff;
+}
+
+.table-tbody-bordered-bottom tbody tr td {
+  border-bottom: 2px solid #fff;
+}
+
+h1 small {
+  font-size: 1.3rem;
+  display: block;
+}
+
+h2 small {
+  font-size: 1.1rem;
+  display: block;
+}
+
+h3 small {
+  font-size: 0.8rem;
+  display: block;
+}
+
+h4 small {
+  font-size: 0.5rem;
+  display: block;
+}
+
+h5 small {
+  font-size: 0.3rem;
+  display: block;
+}
+
+h6 small {
+  font-size: 0.1rem;
+  display: block;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+}
+/*# sourceMappingURL=index.css.map */

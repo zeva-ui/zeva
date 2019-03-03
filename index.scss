@@ -1,0 +1,29 @@
+//import your font
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+//your main color
+$main-color:#fff;
+//the danger button color
+$danger: rgb(236, 47, 79);
+//your font
+$font: 'Poppins', sans-serif;
+//your background color
+$background:#000;
+
+//you can mess around with these values but i suggest you to keep them this way owo
+$font-size: 1rem;
+$font-size-small: 0.8rem;
+$font-size-big: 1.2rem;
+
+@import 'button';
+@import 'form';
+@import 'table';
+@import 'other';
+
+body {
+    font-family:$font;
+    background:$background;
+    color:$main-color;
+    padding:0px;
+    margin:0px;
+}
