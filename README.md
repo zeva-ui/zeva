@@ -33,7 +33,7 @@ $background:#000;
 
 ## Font size
 
-```scss
+```css
 $font-size: 1rem; /* normal font */
 $font-size-small: 0.8rem; /* smaller font */
 $font-size-big: 1.2rem;  /* bigger font */
