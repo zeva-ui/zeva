@@ -8,8 +8,11 @@ Download the zip file, or clone it from
 https://github.com/imfunniee/zeva.git
 ```  
 
-In your project link to the index.css file, or you can use the following link 
+In your project link to the index.css pr index.min.css file, or you can use the following link 
 ```
-https://cdn.jsdelivr.net/gh/imfunniee/zeva/index.css
+https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css
+```
+```
+https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css
 ```
 
