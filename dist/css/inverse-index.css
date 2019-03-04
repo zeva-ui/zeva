@@ -1,0 +1,343 @@
+/* Manifest file for variables */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #000;
+  padding: 0px;
+  margin: 0px; }
+
+.button {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  font-size: 1rem;
+  padding: 14px 35px;
+  margin: 10px 15px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  transition: 1s ease-in-out; }
+  .button i {
+    color: #000;
+    font-size: 0.8rem; }
+
+.block {
+  display: block; }
+
+.rounded {
+  border-radius: 50px !important; }
+
+.button:disabled {
+  color: black;
+  border: 2px solid black; }
+
+.button:hover {
+  background: #fff radial-gradient(circle, transparent 1%, #fff 1%) center center/15000%; }
+
+.button:active {
+  background-color: black;
+  background-size: 100%;
+  transition: 0s ease-in-out; }
+
+.small {
+  padding: 6px 20px;
+  font-size: 0.8rem; }
+  .small i {
+    color: #000;
+    font-size: 0.6rem !important; }
+
+.big {
+  padding: 18px 60px;
+  font-size: 1.2rem; }
+  .big i {
+    color: #000;
+    font-size: 1rem; }
+
+.filled {
+  background: #000;
+  color: #fff; }
+  .filled i {
+    color: #fff;
+    font-size: 0.8rem; }
+
+.filled:hover {
+  background: #000 radial-gradient(circle, transparent 1%, #000 1%) center center/15000%; }
+
+.filled:active {
+  background-color: black;
+  background-size: 100%;
+  transition: 0s ease-in-out; }
+
+.filled:disabled {
+  color: #fff;
+  background: black; }
+
+.danger {
+  background: #fff;
+  color: #ec2f4f;
+  border: 2px solid #ec2f4f; }
+  .danger i {
+    color: #ec2f4f; }
+
+.danger:disabled {
+  color: #f2758a;
+  border: 2px solid #f2758a; }
+
+.danger:hover {
+  background: #fff radial-gradient(circle, transparent 1%, #fff 1%) center center/15000%; }
+
+.danger:active {
+  background-color: #f9bbc6;
+  background-size: 100%;
+  transition: 0s ease-in-out; }
+
+.danger-filled {
+  background: #ec2f4f;
+  color: #fff;
+  border: 2px solid #ec2f4f; }
+  .danger-filled i {
+    color: #fff; }
+
+.danger-filled:disabled {
+  color: #fff;
+  border: 2px solid #f2758a;
+  background: #f2758a; }
+
+.danger-filled:hover {
+  background: #ec2f4f radial-gradient(circle, transparent 1%, #ec2f4f 1%) center center/15000%; }
+
+.danger-filled:active {
+  background-color: #f05e77;
+  background-size: 100%;
+  transition: 0s ease-in-out; }
+
+#container {
+  width: 80vw;
+  padding: 5vh 10vw; }
+
+form {
+  width: 100%; }
+
+.input {
+  width: 40%;
+  padding: 15px 3%;
+  margin: 1.6%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: 0px;
+  border-bottom: 1px solid black;
+  background: transparent;
+  color: #000;
+  transition: 0.4s ease-in-out; }
+
+.input:disabled {
+  opacity: 0.4;
+  border-bottom: 2px solid black; }
+
+.full {
+  width: 89.5%; }
+
+.input option {
+  background: #000;
+  color: #fff; }
+
+.input:focus {
+  outline: none;
+  border-bottom: 1px solid #000; }
+
+.bordered {
+  border-radius: 6px;
+  border: 1px solid black; }
+
+.bordered:focus {
+  border: 1px solid #000; }
+
+.input-filled {
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff !important; }
+
+.input-filled::placeholder {
+  color: #fff !important; }
+
+.input::placeholder {
+  color: #000; }
+
+.bold {
+  border-width: 2px;
+  font-weight: bold; }
+
+.bold:focus {
+  border-bottom: 2px solid #000; }
+
+.label {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000; }
+
+.label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+.radio {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  transition: 0.4s ease-in-out; }
+
+.label:hover input ~ .radio {
+  background-color: black; }
+
+.label input:checked ~ .radio {
+  background-color: #black; }
+
+.label input:disabled ~ .radio {
+  opacity: 0.5;
+  background-color: black; }
+
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.label input:checked ~ .radio:after {
+  display: block; }
+
+.label .radio:after {
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%; }
+
+.checkbox {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 2px;
+  transition: 0.4s ease-in-out; }
+
+.label:hover input ~ .checkbox {
+  background-color: black; }
+
+.label input:checked ~ .checkbox {
+  background-color: #000; }
+
+.label input:disabled ~ .checkbox {
+  opacity: 0.5;
+  background-color: black; }
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.label input:checked ~ .checkbox:after {
+  display: block; }
+
+.label .checkbox:after {
+  left: 9px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.select-full {
+  width: 95%; }
+
+textarea {
+  display: block; }
+
+.table {
+  width: 100%;
+  padding: 2% 0;
+  text-align: left;
+  border-collapse: collapse; }
+  .table thead tr th {
+    padding: 20px 15px;
+    color: #000; }
+  .table tbody tr td {
+    padding: 20px 15px; }
+
+.table-right {
+  text-align: right !important; }
+
+.table-center {
+  text-align: center !important; }
+
+.table-filled thead tr th {
+  background: #000 !important;
+  color: #fff !important; }
+
+.table-tbody-filled tbody tr td {
+  background: #000 !important;
+  color: #fff !important; }
+
+.table-bordered thead tr th {
+  border: 2px solid #000; }
+
+.table-bordered tbody tr td {
+  border: 2px solid #000; }
+
+.table-bordered-bottom thead tr th {
+  border-bottom: 2px solid #000; }
+
+.table-bordered-bottom tbody tr td {
+  border-bottom: 2px solid #000; }
+
+.table-tbody-bordered tbody tr td {
+  border: 2px solid #000; }
+
+.table-tbody-bordered-bottom tbody tr td {
+  border-bottom: 2px solid #000; }
+
+h1 small {
+  font-size: 1.3rem;
+  display: block; }
+
+h2 small {
+  font-size: 1.1rem;
+  display: block; }
+
+h3 small {
+  font-size: 0.8rem;
+  display: block; }
+
+h4 small {
+  font-size: 0.5rem;
+  display: block; }
+
+h5 small {
+  font-size: 0.3rem;
+  display: block; }
+
+h6 small {
+  font-size: 0.1rem;
+  display: block; }
+
+/*# sourceMappingURL=index.css.map */
