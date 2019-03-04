@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://imfunniee.github.io/zeva/image/zeva.png" width="30%">
+</p>
+
 # zeva
 Yet another minimalist UI framework
 
