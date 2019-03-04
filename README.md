@@ -24,7 +24,7 @@ https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css
 
 ## Basic stuff
 
-```css
+```sass
 $main-color:#fff;
 $danger: rgb(236, 47, 79);
 $font: 'Poppins', sans-serif;
@@ -33,7 +33,7 @@ $background:#000;
 
 ## Font size
 
-```css
+```sass
 $font-size: 1rem; /* normal font */
 $font-size-small: 0.8rem; /* smaller font */
 $font-size-big: 1.2rem;  /* bigger font */
@@ -41,7 +41,7 @@ $font-size-big: 1.2rem;  /* bigger font */
 
 ## Basic Styling
 
-```css
+```sass
 yourcomponent {
     font-family:$font;
     background:$background;
@@ -55,7 +55,7 @@ yourcomponent {
 
 ## Basic Styling for Input Tags
 
-```css
+```sass
 yourInputComponent {
     outline: none;
     padding: 14px 35px;
