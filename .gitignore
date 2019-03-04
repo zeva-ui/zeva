@@ -1,0 +1,6 @@
+# Packages
+node_modules
+
+# VSCode user configuration files
+.vscode
+*.code-workspace
