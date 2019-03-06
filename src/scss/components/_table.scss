@@ -1,72 +1,72 @@
 .table {
-    width:100%;
+    width: 100%;
 
-    padding:2% 0;
+    padding: 2% 0;
 
-    text-align:left;
+    text-align: left;
 
-    border-collapse:collapse;
+    border-collapse: collapse;
 
     thead tr th{
-        padding:20px 15px;
-        color:$main-color;
+        padding: 20px 15px;
+        color: $main-color;
     }
 
     tbody tr td{
-        padding:20px 15px;
+        padding: 20px 15px;
     }
 }
 
 .table-right {
-    text-align:right !important;
+    text-align: right !important;
 }
 
 .table-center {
-    text-align:center !important;
+    text-align: center !important;
 }
 
 .table-filled {
     thead tr th{
-        background:$main-color !important;
-        color:$background !important;
+        background: $main-color !important;
+        color: $background !important;
     }
 }
 
 .table-tbody-filled {
     tbody tr td{
-        background:$main-color !important;
-        color:$background !important;
+        background: $main-color !important;
+        color: $background !important;
     }
 }
 
 .table-bordered {
     thead tr th{
-        border:2px solid $main-color;
+        border: 2px solid $main-color;
     }
 
     tbody tr td{
-        border:2px solid $main-color;
+        border: 2px solid $main-color;
     }
 }
 
 .table-bordered-bottom {
     thead tr th{
-        border-bottom:2px solid $main-color;
+        border-bottom: 2px solid $main-color;
     }
     
     tbody tr td{
-        border-bottom:2px solid $main-color;
+        border-bottom: 2px solid $main-color;
     }
 }
 
 .table-tbody-bordered {
     tbody tr td{
-        border:2px solid $main-color;
+        border: 2px solid $main-color;
     }
 }
 
 .table-tbody-bordered-bottom {
     tbody tr td{
-        border-bottom:2px solid $main-color;
+        border-bottom: 2px solid $main-color;
     }
 }
