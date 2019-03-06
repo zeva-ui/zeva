@@ -1,17 +1,23 @@
 .button {
   color: $main-color;
   font-family: $font;
-  background: $background;
   font-size: $font-size;
-  padding: 14px 35px;
-  margin:10px 15px;
-  border: 2px solid $main-color;
-  border-radius: 6px;
   font-weight: bold;
   text-align: center;
-  cursor: pointer;
+
+  background: $background;
+
+  padding: 14px 35px;
+  margin:10px 15px;
+
+  border: 2px solid $main-color;
+  border-radius: 6px;
   outline: none;
+  
+  cursor: pointer;
+  
   transition: 1s ease-in-out;
+
   i {
     color: $main-color;
     font-size: 0.8rem;
@@ -28,6 +34,7 @@
 
 .button:disabled {
   color: lighten($main-color, 15%);
+
   border: 2px solid lighten($main-color, 15%);
 }
 
@@ -38,12 +45,15 @@
 .button:active {
   background-color: lighten($main-color, 30%);
   background-size: 100%;
+
   transition: 0s ease-in-out;
 }
 
 .small {
   padding: 6px 20px;
+
   font-size: $font-size-small;
+
   i {
     color: $main-color;
     font-size: 0.6rem !important;
@@ -52,7 +62,9 @@
 
 .big {
   padding: 18px 60px;
+
   font-size: $font-size-big;
+
   i {
     color: $main-color;
     font-size: 1rem;
@@ -61,7 +73,9 @@
 
 .filled {
   background: $main-color;
+
   color: $background;
+
   i {
     color: $background;
     font-size: 0.8rem;
@@ -75,18 +89,23 @@
 .filled:active {
   background-color: lighten($main-color, 10%);
   background-size: 100%;
+
   transition: 0s ease-in-out;
 }
 
 .filled:disabled {
   color: $background;
+
   background: lighten($main-color, 15%);
 }
 
 .danger {
   background: $background;
+
   color: $danger;
+
   border: 2px solid $danger;
+
   i {
     color: $danger;
   }
@@ -94,6 +113,7 @@
 
 .danger:disabled {
   color: lighten($danger, 15%);
+
   border: 2px solid lighten($danger, 15%);
 }
 
@@ -104,13 +124,17 @@
 .danger:active {
   background-color: lighten($danger, 30%);
   background-size: 100%;
+
   transition: 0s ease-in-out;
 }
 
 .danger-filled {
   background: $danger;
+
   color: $background;
+
   border: 2px solid $danger;
+
   i {
     color: $background;
   }
@@ -118,7 +142,9 @@
 
 .danger-filled:disabled {
   color: $background;
+
   border: 2px solid lighten($danger, 15%);
+
   background: lighten($danger, 15%);
 }
 
@@ -129,5 +155,6 @@
 .danger-filled:active {
   background-color: lighten($danger, 10%);
   background-size: 100%;
+  
   transition: 0s ease-in-out;
 }

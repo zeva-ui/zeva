@@ -1,5 +1,6 @@
 #container {
   width: 80vw;
+
   padding: 5vh 10vw;
 }
 
@@ -9,19 +10,25 @@ form {
 
 .input {
   width: 40%;
+
   padding: 15px 3%;
   margin: 1.6%;
+
+  color: $main-color;
   font-family: $font;
   font-size: $font-size;
+
   border: 0px;
   border-bottom: 1px solid lighten($main-color, 30%);
+
   background: transparent;
-  color: $main-color;
+
   transition: 0.4s ease-in-out;
 }
 
 .input:disabled {
   opacity: 0.4;
+
   border-bottom: 2px solid lighten($main-color, 10%);
 }
 
@@ -31,6 +38,7 @@ form {
 
 .input option {
   background: $main-color;
+
   color: $background;
 }
 
@@ -50,7 +58,9 @@ form {
 
 .input-filled {
   color: $background;
+
   background: $main-color;
+
   border: 1px solid $background !important;
 }
 
@@ -64,6 +74,7 @@ form {
 
 .bold {
   border-width: 2px;
+
   font-weight: bold;
 }
 
@@ -74,20 +85,23 @@ form {
 .label {
   display: block;
   position: relative;
+
   padding-left: 40px;
   margin-bottom: 15px;
+
   cursor: pointer;
-  font-size: $font-size;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+
   color: $main-color;
+  font-size: $font-size;
+  
+  user-select: none;
 }
 
 .label input {
   position: absolute;
+
   opacity: 0;
+
   cursor: pointer;
 }
 
@@ -95,10 +109,14 @@ form {
   position: absolute;
   top: 0px;
   left: 0;
+
   height: 25px;
   width: 25px;
+
   background-color: lighten($main-color, 30%);
+
   border-radius: 50%;
+
   transition: 0.4s ease-in-out;
 }
 
@@ -112,13 +130,15 @@ form {
 
 .label input:disabled~.radio {
   opacity: 0.5;
+
   background-color: lighten($main-color, 30%);
 }
 
 .radio:after {
   content: "";
-  position: absolute;
+
   display: none;
+  position: absolute;
 }
 
 .label input:checked~.radio:after {
@@ -128,9 +148,12 @@ form {
 .label .radio:after {
   top: 5px;
   left: 5px;
+
   width: 15px;
   height: 15px;
+
   background: $background;
+  
   border-radius: 50%
 }
 
@@ -138,9 +161,13 @@ form {
   position: absolute;
   top: -3px;
   left: 0;
+
   height: 25px;
   width: 25px;
+
   background-color: lighten($main-color, 30%);
+
+
   border-radius: 2px;
   transition: 0.4s ease-in-out;
 }
@@ -155,13 +182,15 @@ form {
 
 .label input:disabled~.checkbox {
   opacity: 0.5;
+
   background-color: lighten($main-color, 30%);
 }
 
 .checkbox:after {
   content: "";
-  position: absolute;
+
   display: none;
+  position: absolute;
 }
 
 .label input:checked~.checkbox:after {
@@ -171,12 +200,13 @@ form {
 .label .checkbox:after {
   left: 9px;
   top: 4px;
+
   width: 5px;
   height: 10px;
+
   border: solid $background;
   border-width: 0 4px 4px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  
   transform: rotate(45deg);
 }
 
