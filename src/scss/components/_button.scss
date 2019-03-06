@@ -18,6 +18,23 @@
     
     transition: 1s ease-in-out;
 
+    &:disabled {
+        color: lighten($main-color, 15%);
+    
+        border: 2px solid lighten($main-color, 15%);
+    }
+
+    &:hover {
+        background: $background radial-gradient(circle, transparent 1%, $background 1%) center center/15000%;
+    }
+
+    &:active {
+        background-color: lighten($main-color, 30%);
+        background-size: 100%;
+    
+        transition: 0s ease-in-out;
+    }
+
     i {
         color: $main-color;
         font-size: 0.8rem;
@@ -30,23 +47,6 @@
 
 .rounded {
     border-radius: 50px !important;
-}
-
-.button:disabled {
-    color: lighten($main-color, 15%);
-
-    border: 2px solid lighten($main-color, 15%);
-}
-
-.button:hover {
-    background: $background radial-gradient(circle, transparent 1%, $background 1%) center center/15000%;
-    }
-
-    .button:active {
-    background-color: lighten($main-color, 30%);
-    background-size: 100%;
-
-    transition: 0s ease-in-out;
 }
 
 .small {
@@ -76,27 +76,27 @@
 
     color: $background;
 
+    &:hover {
+        background: $main-color radial-gradient(circle, transparent 1%, $main-color 1%) center center/15000%;
+    }
+
+    &:active {
+        background-color: lighten($main-color, 10%);
+        background-size: 100%;
+    
+        transition: 0s ease-in-out;
+    }
+
+    &:disabled {
+        color: $background;
+    
+        background: lighten($main-color, 15%);
+    }
+
     i {
         color: $background;
         font-size: 0.8rem;
     }
-}
-
-.filled:hover {
-    background: $main-color radial-gradient(circle, transparent 1%, $main-color 1%) center center/15000%;
-}
-
-.filled:active {
-    background-color: lighten($main-color, 10%);
-    background-size: 100%;
-
-    transition: 0s ease-in-out;
-}
-
-.filled:disabled {
-    color: $background;
-
-    background: lighten($main-color, 15%);
 }
 
 .danger {
@@ -106,26 +106,26 @@
 
     border: 2px solid $danger;
 
+    &:disabled {
+        color: lighten($danger, 15%);
+    
+        border: 2px solid lighten($danger, 15%);
+    }
+
+    &:hover {
+        background: $background radial-gradient(circle, transparent 1%, $background 1%) center center/15000%;
+    }
+
+    &:active {
+        background-color: lighten($danger, 30%);
+        background-size: 100%;
+    
+        transition: 0s ease-in-out;
+    }
+
     i {
         color: $danger;
     }
-}
-
-.danger:disabled {
-    color: lighten($danger, 15%);
-
-    border: 2px solid lighten($danger, 15%);
-}
-
-.danger:hover {
-    background: $background radial-gradient(circle, transparent 1%, $background 1%) center center/15000%;
-}
-
-.danger:active {
-    background-color: lighten($danger, 30%);
-    background-size: 100%;
-
-    transition: 0s ease-in-out;
 }
 
 .danger-filled {
@@ -135,26 +135,26 @@
 
     border: 2px solid $danger;
 
+    &:disabled {
+        color: $background;
+    
+        border: 2px solid lighten($danger, 15%);
+    
+        background: lighten($danger, 15%);
+    }
+
+    &:hover {
+        background: $danger radial-gradient(circle, transparent 1%, $danger 1%) center center/15000%;
+    }
+
+    &:active {
+        background-color: lighten($danger, 10%);
+        background-size: 100%;
+        
+        transition: 0s ease-in-out;
+    }
+
     i {
         color: $background;
     }
-}
-
-.danger-filled:disabled {
-    color: $background;
-
-    border: 2px solid lighten($danger, 15%);
-
-    background: lighten($danger, 15%);
-}
-
-.danger-filled:hover {
-    background: $danger radial-gradient(circle, transparent 1%, $danger 1%) center center/15000%;
-}
-
-.danger-filled:active {
-    background-color: lighten($danger, 10%);
-    background-size: 100%;
-    
-    transition: 0s ease-in-out;
 }

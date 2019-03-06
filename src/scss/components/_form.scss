@@ -24,36 +24,40 @@ form {
     background: transparent;
 
     transition: 0.4s ease-in-out;
-}
 
-.input:disabled {
-    opacity: 0.4;
+    &:disabled {
+        opacity: 0.4;
+    
+        border-bottom: 2px solid lighten($main-color, 10%);
+    }
 
-    border-bottom: 2px solid lighten($main-color, 10%);
+    &:focus {
+        outline: none;
+        border-bottom: 1px solid $main-color;
+    }
+
+    &::placeholder {
+        color: $main-color;
+    }
+
+    option {
+        background: $main-color;
+    
+        color: $background;
+    }
 }
 
 .full {
     width: 89.5%;
 }
 
-.input option {
-    background: $main-color;
-
-    color: $background;
-}
-
-.input:focus {
-    outline: none;
-    border-bottom: 1px solid $main-color;
-}
-
 .bordered {
     border-radius: 6px;
     border: 1px solid lighten($main-color, 30%);
-}
 
-.bordered:focus {
-    border: 1px solid $main-color;
+    &:focus {
+        border: 1px solid $main-color;
+    }
 }
 
 .input-filled {
@@ -62,24 +66,20 @@ form {
     background: $main-color;
 
     border: 1px solid $background !important;
-}
 
-.input-filled::placeholder {
-    color: $background !important;
-}
-
-.input::placeholder {
-    color: $main-color;
+    &::placeholder {
+        color: $background !important;
+    }
 }
 
 .bold {
     border-width: 2px;
 
     font-weight: bold;
-}
 
-.bold:focus {
-    border-bottom: 2px solid $main-color;
+    &:focus {
+        border-bottom: 2px solid $main-color;
+    }
 }
 
 .label {
@@ -95,66 +95,75 @@ form {
     font-size: $font-size;
     
     user-select: none;
-}
 
-.label input {
-    position: absolute;
+    &:hover input~.checkbox {
+        background-color: lighten($main-color, 20%);
+    }
 
-    opacity: 0;
+    &:hover input~.radio {
+        background-color: lighten($main-color, 20%);
+    }
 
-    cursor: pointer;
-}
-
-.radio {
-    position: absolute;
-    top: 0px;
-    left: 0;
-
-    height: 25px;
-    width: 25px;
-
-    background-color: lighten($main-color, 30%);
-
-    border-radius: 50%;
-
-    transition: 0.4s ease-in-out;
-}
-
-.label:hover input~.radio {
-    background-color: lighten($main-color, 20%);
-}
-
-.label input:checked~.radio {
-    background-color: $main-color;
-}
-
-.label input:disabled~.radio {
-    opacity: 0.5;
-
-    background-color: lighten($main-color, 30%);
-}
-
-.radio:after {
-    content: "";
-
-    display: none;
-    position: absolute;
-}
-
-.label input:checked~.radio:after {
-    display: block;
-}
-
-.label .radio:after {
-    top: 5px;
-    left: 5px;
-
-    width: 15px;
-    height: 15px;
-
-    background: $background;
+    input {
+        position: absolute;
     
-    border-radius: 50%
+        opacity: 0;
+    
+        cursor: pointer;
+    }
+
+    input:checked~.checkbox {
+        background-color: $main-color;
+    }
+
+    input:checked~.checkbox:after {
+        display: block;
+    }
+
+    input:disabled~.checkbox {
+        opacity: 0.5;
+    
+        background-color: lighten($main-color, 30%);
+    }
+
+    input:disabled~.radio {
+        opacity: 0.5;
+    
+        background-color: lighten($main-color, 30%);
+    }    
+
+    input:checked~.radio {
+        background-color: $main-color;
+    }
+
+    input:checked~.radio:after {
+        display: block;
+    }
+
+    .radio:after {
+        top: 5px;
+        left: 5px;
+    
+        width: 15px;
+        height: 15px;
+    
+        background: $background;
+        
+        border-radius: 50%
+    }
+
+    .checkbox:after {
+        left: 9px;
+        top: 4px;
+    
+        width: 5px;
+        height: 10px;
+    
+        border: solid $background;
+        border-width: 0 4px 4px 0;
+        
+        transform: rotate(45deg);
+    }
 }
 
 .checkbox {
@@ -170,44 +179,35 @@ form {
 
     border-radius: 2px;
     transition: 0.4s ease-in-out;
+
+    &:after {
+        content: "";
+    
+        display: none;
+        position: absolute;
+    }
 }
 
-.label:hover input~.checkbox {
-    background-color: lighten($main-color, 20%);
-}
+.radio {
+    position: absolute;
+    top: 0px;
+    left: 0;
 
-.label input:checked~.checkbox {
-    background-color: $main-color;
-}
-
-.label input:disabled~.checkbox {
-    opacity: 0.5;
+    height: 25px;
+    width: 25px;
 
     background-color: lighten($main-color, 30%);
-}
 
-.checkbox:after {
-    content: "";
+    border-radius: 50%;
 
-    display: none;
-    position: absolute;
-}
+    transition: 0.4s ease-in-out;
 
-.label input:checked~.checkbox:after {
-    display: block;
-}
-
-.label .checkbox:after {
-    left: 9px;
-    top: 4px;
-
-    width: 5px;
-    height: 10px;
-
-    border: solid $background;
-    border-width: 0 4px 4px 0;
+    &:after {
+        content: "";
     
-    transform: rotate(45deg);
+        display: none;
+        position: absolute;
+    }
 }
 
 .select-full {
