@@ -21,9 +21,10 @@ body {
   cursor: pointer;
   outline: none;
   transition: 1s ease-in-out; }
-  .button i {
-    color: #000;
-    font-size: 0.8rem; }
+
+.button i {
+  color: #000;
+  font-size: 0.8rem; }
 
 .block {
   display: block; }
@@ -46,23 +47,26 @@ body {
 .small {
   padding: 6px 20px;
   font-size: 0.8rem; }
-  .small i {
-    color: #000;
-    font-size: 0.6rem !important; }
+
+.small i {
+  color: #000;
+  font-size: 0.6rem !important; }
 
 .big {
   padding: 18px 60px;
   font-size: 1.2rem; }
-  .big i {
-    color: #000;
-    font-size: 1rem; }
+
+.big i {
+  color: #000;
+  font-size: 1rem; }
 
 .filled {
   background: #000;
   color: #fff; }
-  .filled i {
-    color: #fff;
-    font-size: 0.8rem; }
+
+.filled i {
+  color: #fff;
+  font-size: 0.8rem; }
 
 .filled:hover {
   background: #000 radial-gradient(circle, transparent 1%, #000 1%) center center/15000%; }
@@ -80,8 +84,9 @@ body {
   background: #fff;
   color: #ec2f4f;
   border: 2px solid #ec2f4f; }
-  .danger i {
-    color: #ec2f4f; }
+
+.danger i {
+  color: #ec2f4f; }
 
 .danger:disabled {
   color: #f2758a;
@@ -99,8 +104,9 @@ body {
   background: #ec2f4f;
   color: #fff;
   border: 2px solid #ec2f4f; }
-  .danger-filled i {
-    color: #fff; }
+
+.danger-filled i {
+  color: #fff; }
 
 .danger-filled:disabled {
   color: #fff;
@@ -206,7 +212,7 @@ form {
   background-color: black; }
 
 .label input:checked ~ .radio {
-  background-color: #black; }
+  background-color: black; }
 
 .label input:disabled ~ .radio {
   opacity: 0.5;
@@ -278,11 +284,13 @@ textarea {
   padding: 2% 0;
   text-align: left;
   border-collapse: collapse; }
-  .table thead tr th {
-    padding: 20px 15px;
-    color: #000; }
-  .table tbody tr td {
-    padding: 20px 15px; }
+
+.table thead tr th {
+  padding: 20px 15px;
+  color: #000; }
+
+.table tbody tr td {
+  padding: 20px 15px; }
 
 .table-right {
   text-align: right !important; }
@@ -341,3 +349,5 @@ h6 small {
   display: block; }
 
 /*# sourceMappingURL=index.css.map */
+
+/*# sourceMappingURL=zeva-inverse.css.map */
