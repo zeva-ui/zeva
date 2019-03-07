@@ -1,25 +1,24 @@
-/* Manifest file for variables */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 body {
   font-family: "Poppins", sans-serif;
-  background: #fff;
   color: #000;
+  background: #fff;
   padding: 0px;
   margin: 0px; }
 
 .button {
   color: #000;
   font-family: "Poppins", sans-serif;
-  background: #fff;
   font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background: #fff;
   padding: 14px 35px;
   margin: 10px 15px;
   border: 2px solid #000;
   border-radius: 6px;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
   transition: 1s ease-in-out; }
 
 .button i {
@@ -132,12 +131,12 @@ form {
   width: 40%;
   padding: 15px 3%;
   margin: 1.6%;
+  color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   border: 0px;
   border-bottom: 1px solid black;
   background: transparent;
-  color: #000;
   transition: 0.4s ease-in-out; }
 
 .input:disabled {
@@ -186,12 +185,9 @@ form {
   padding-left: 40px;
   margin-bottom: 15px;
   cursor: pointer;
+  color: #000;
   font-size: 1rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #000; }
+  user-select: none; }
 
 .label input {
   position: absolute;
@@ -220,8 +216,8 @@ form {
 
 .radio:after {
   content: "";
-  position: absolute;
-  display: none; }
+  display: none;
+  position: absolute; }
 
 .label input:checked ~ .radio:after {
   display: block; }
@@ -269,8 +265,6 @@ form {
   height: 10px;
   border: solid #000;
   border-width: 0 4px 4px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 .select-full {
@@ -347,7 +341,5 @@ h5 small {
 h6 small {
   font-size: 0.1rem;
   display: block; }
-
-/*# sourceMappingURL=index.css.map */
 
 /*# sourceMappingURL=zeva-inverse.css.map */
