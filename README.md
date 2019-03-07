@@ -10,8 +10,8 @@ Yet another minimalist UI framework
 You have the following options to get zeva:
 * Downoad the zip file, or clone it from [here](https://github.com/zeva-ui/zeva.git)
 * You can link directly with the following links
-     - [https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css) 
-     - [https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css)
+    - [https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css) 
+    - [https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css)
 
 # Contributing
 

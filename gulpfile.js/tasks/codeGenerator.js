@@ -8,5 +8,5 @@ const { compileSass } = require('./sassCompiler');
 const generateCode = parallel(compileSass);
 
 module.exports = {
-  generateCode
+    generateCode
 }

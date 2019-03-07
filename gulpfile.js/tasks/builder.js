@@ -8,8 +8,8 @@ const { generateCode } = require('./codeGenerator');
 const buildFiles = series(
                     cleanDist, 
                     generateCode
-                  );
+                );
 
 module.exports = {
-  buildFiles
+    buildFiles
 }

@@ -9,14 +9,14 @@ const { postcss } = require('../plugins/postcss');
 // Secondary tasks
 function optimizeCSS() {
   return src('./dist/css/*.css')
-          .pipe(sourcemaps.init())
-          .pipe(rename({
-            suffix: ".min",
-            extname: ".css"
-          }))
-          .pipe(postcss(options.postcssPlugins))
-          .pipe(sourcemaps.write('./'))
-          .pipe(dest('./dist/css'));
+            .pipe(sourcemaps.init())
+            .pipe(rename({
+                suffix: ".min",
+                extname: ".css"
+            }))
+            .pipe(postcss(options.postcssPlugins))
+            .pipe(sourcemaps.write('./'))
+            .pipe(dest('./dist/css'));
 }
 
 // Main task
