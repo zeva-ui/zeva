@@ -13,6 +13,13 @@ You have the following options to get zeva:
      - [https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css) 
      - [https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css)
 
+# Contributing
+
+Please read through our [contributing guidelines](https://github.com/zeva-ui/zeva/wiki/Contributing-Guidelines). Included are directions for opening issues, coding standards, and notes on development.
+
+All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
+
+Editor preferences are available in the [editor config](https://github.com/zeva-ui/zeva/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
 # Styling Guide
 
