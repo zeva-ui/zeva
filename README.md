@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://zeva-ui.github.io/">
-        <img src="https://imfunniee.github.io/zeva/image/zeva.png" alt="Zeva logo" width="72" height="72">
+        <img src="https://raw.githubusercontent.com/zeva-ui/zeva-ui.github.io/master/assets/image/zeva.png" alt="Zeva logo" width="72" height="72">
     </a>
 </p>
 
