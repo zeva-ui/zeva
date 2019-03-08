@@ -157,7 +157,7 @@ yourInputComponent {
 
 Get updates on Zeva's development and chat with the project maintainers and community members.
 
-- Join our Discord server (under development).
+- Join our [Discord server](https://discord.gg/EaRGqDm).
 - Join the official Slack room (under development).
 
 # Versioning
