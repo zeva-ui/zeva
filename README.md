@@ -7,7 +7,7 @@
 <h3 align="center">Zeva</h3>
 
 <p align="center">
-    Yet another minimalist UI framework
+    A modern and minimalist framework for building responsive and modern Front-ends
     <br>
     <a href="https://zeva-ui.github.io/"><strong>Explore Zeva docs »</strong></a>
     <br>
