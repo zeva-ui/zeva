@@ -8,4 +8,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Changed
  - 
 ### Added
- - 
+ - Contributing guidelines for new comers
+ - Table components
+ - Form components
+ - Typography base styles
+ - Button components
+ - Docs title and description
