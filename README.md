@@ -165,9 +165,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 # Core Team
 
-* **[imfunny](https://github.com/imfunniee)** - *founder*
-* **[jlammer](https://github.com/JLammeer)** - *project developer*
-* **[Kvanrooyen](https://github.com/Kvanrooyen)** - *project developer*
+| **imfunny** | **jlammer** | **Kvanrooyen** |
+| :---: |:---:| :---:|
+| [![imfunny](https://avatars0.githubusercontent.com/u/36105478?v=3&s=70)](https://github.com/imfunniee) | [![jlammer](https://avatars0.githubusercontent.com/u/35262827?v=3&s=70)](https://github.com/JLammeer) | [![Kvanrooyen](https://avatars1.githubusercontent.com/u/17731202?v=3&s=70)](https://github.com/Kvanrooyen)  |
+
 
 # Thanks
 
