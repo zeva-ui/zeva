@@ -157,8 +157,7 @@ yourInputComponent {
 
 Get updates on Zeva's development and chat with the project maintainers and community members.
 
-- [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/hgJ8RHu)
-- Join the official Slack room (under development).
+[![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/hgJ8RHu)
 
 # Versioning
 
