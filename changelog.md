@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Changed
  - 
 ### Added
+ - 
+
+## [v1.0.0-beta](https://github.com/zeva-ui/zeva/releases/tag/v1.0.0-beta)
+### Added
  - Contributing guidelines for new comers
  - Table components
  - Form components
