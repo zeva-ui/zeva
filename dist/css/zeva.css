@@ -1,5 +1,60 @@
 /* Manifest file for variables */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+.h-display-block {
+  display: block; }
+
+.h-text-right {
+  text-align: right; }
+
+.h-text-center {
+  text-align: center; }
+
+.h-weight-bold {
+  font-weight: bold; }
+
+.h-width-full {
+  width: 100%; }
+
+/* ----- keyframes ----- */
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(247, 247, 247, 0.094); }
+  100% {
+    box-shadow: 0 0 0 20px rgba(247, 247, 247, 0.094); } }
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(56, 56, 56, 0.6);
+    transform: translatey(0px); }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(56, 56, 56, 0.2);
+    transform: translatey(-20px); }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(56, 56, 56, 0.6);
+    transform: translatey(0px); } }
+
+/* ----- animation classes ----- */
+.h-anim-pulse {
+  animation: shadow-pulse 1s 1; }
+  .h-anim-pulse--hover:hover {
+    animation: shadow-pulse 1s 1; }
+
+.h-anim-float {
+  animation: float 6s 1 ease-in-out; }
+
+/* ----- parameter helpers ----- */
+.h-iteration-infinite {
+  animation-iteration-count: infinite !important; }
+
+.h-border-pill {
+  border-radius: 50px !important; }
+
+.h-border-all {
+  border: 1px solid; }
+
+.h-border-bottom {
+  border-bottom: 1px solid; }
+
 h1, h2, h3, h4, h5, h6 {
   display: block; }
 
@@ -250,32 +305,5 @@ select.input option {
     border: 2px solid #fff !important; }
   .table .table__body--borderless td {
     border: none !important; }
-
-/* Animations */
-.pulse-infinite {
-  animation: shadow-pulse 1s infinite; }
-
-.pulse-once:hover {
-  animation: shadow-pulse 1s 1; }
-
-@keyframes shadow-pulse {
-  0% {
-    box-shadow: 0 0 0 0px rgba(247, 247, 247, 0.094); }
-  100% {
-    box-shadow: 0 0 0 20px rgba(247, 247, 247, 0.094); } }
-
-.float {
-  animation: float 6s ease-in-out infinite; }
-
-@keyframes float {
-  0% {
-    box-shadow: 0 5px 15px 0px rgba(56, 56, 56, 0.6);
-    transform: translatey(0px); }
-  50% {
-    box-shadow: 0 25px 15px 0px rgba(56, 56, 56, 0.2);
-    transform: translatey(-20px); }
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(56, 56, 56, 0.6);
-    transform: translatey(0px); } }
 
 /*# sourceMappingURL=zeva.css.map */
