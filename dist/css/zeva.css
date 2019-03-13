@@ -48,87 +48,77 @@ h6 small {
   outline: none;
   cursor: pointer;
   transition: 1s ease-in-out; }
+  .button:active {
+    background-color: white;
+    background-size: 100%;
+    transition: 0s ease-in-out; }
   .button:disabled {
     color: white;
     border: 2px solid white; }
   .button:hover {
     background: #000 radial-gradient(circle, transparent 1%, #000 1%) center center/15000%; }
-  .button:active {
-    background-color: white;
-    background-size: 100%;
-    transition: 0s ease-in-out; }
-  .button i {
+  .button.-size-small {
+    padding: 6px 20px;
+    font-size: 0.8rem; }
+    .button.-size-small .button__icon {
+      color: #fff;
+      font-size: 0.6rem !important; }
+  .button.-size-large {
+    padding: 18px 60px;
+    font-size: 1.2rem; }
+    .button.-size-large .button__icon {
+      color: #fff;
+      font-size: 1rem; }
+  .button.-theme-danger {
+    background: #000;
+    color: #ec2f4f;
+    border: 2px solid #ec2f4f; }
+    .button.-theme-danger:disabled {
+      color: #f2758a;
+      border: 2px solid #f2758a; }
+    .button.-theme-danger:hover {
+      background: #000 radial-gradient(circle, transparent 1%, #000 1%) center center/15000%; }
+    .button.-theme-danger:active {
+      background-color: #f9bbc6;
+      background-size: 100%;
+      transition: 0s ease-in-out; }
+    .button.-theme-danger .button__icon {
+      color: #ec2f4f; }
+  .button .button__icon {
     color: #fff;
     font-size: 0.8rem; }
 
-.block {
-  display: block; }
-
-.rounded {
-  border-radius: 50px !important; }
-
-.small {
-  padding: 6px 20px;
-  font-size: 0.8rem; }
-  .small i {
-    color: #fff;
-    font-size: 0.6rem !important; }
-
-.big {
-  padding: 18px 60px;
-  font-size: 1.2rem; }
-  .big i {
-    color: #fff;
-    font-size: 1rem; }
-
-.filled {
+.button--filled {
   background: #fff;
   color: #000; }
-  .filled:hover {
-    background: #fff radial-gradient(circle, transparent 1%, #fff 1%) center center/15000%; }
-  .filled:active {
+  .button--filled:active {
     background-color: white;
     background-size: 100%;
     transition: 0s ease-in-out; }
-  .filled:disabled {
+  .button--filled:disabled {
     color: #000;
     background: white; }
-  .filled i {
+  .button--filled:hover {
+    background: #fff radial-gradient(circle, transparent 1%, #fff 1%) center center/15000%; }
+  .button--filled.-theme-danger {
+    background: #ec2f4f;
+    color: #000;
+    border: 2px solid #ec2f4f; }
+    .button--filled.-theme-danger:disabled {
+      color: #000;
+      border: 2px solid #f2758a;
+      background: #f2758a; }
+    .button--filled.-theme-danger:hover {
+      background: #ec2f4f radial-gradient(circle, transparent 1%, #ec2f4f 1%) center center/15000%; }
+    .button--filled.-theme-danger:active {
+      background-color: #f05e77;
+      background-size: 100%;
+      transition: 0s ease-in-out; }
+    .button--filled.-theme-danger .button__icon {
+      color: #000; }
+  .button--filled .button__icon {
     color: #000;
     font-size: 0.8rem; }
-
-.danger {
-  background: #000;
-  color: #ec2f4f;
-  border: 2px solid #ec2f4f; }
-  .danger:disabled {
-    color: #f2758a;
-    border: 2px solid #f2758a; }
-  .danger:hover {
-    background: #000 radial-gradient(circle, transparent 1%, #000 1%) center center/15000%; }
-  .danger:active {
-    background-color: #f9bbc6;
-    background-size: 100%;
-    transition: 0s ease-in-out; }
-  .danger i {
-    color: #ec2f4f; }
-
-.danger-filled {
-  background: #ec2f4f;
-  color: #000;
-  border: 2px solid #ec2f4f; }
-  .danger-filled:disabled {
-    color: #000;
-    border: 2px solid #f2758a;
-    background: #f2758a; }
-  .danger-filled:hover {
-    background: #ec2f4f radial-gradient(circle, transparent 1%, #ec2f4f 1%) center center/15000%; }
-  .danger-filled:active {
-    background-color: #f05e77;
-    background-size: 100%;
-    transition: 0s ease-in-out; }
-  .danger-filled i {
-    color: #000; }
 
 .input {
   width: 40%;
