@@ -89,6 +89,10 @@ h5 small {
 h6 small {
   font-size: 0.1rem; }
 
+.container {
+  width: 80vw;
+  padding: 5vh 10vw; }
+
 .button {
   color: #fff;
   font-family: "Poppins", sans-serif;

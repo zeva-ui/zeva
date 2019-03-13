@@ -18,7 +18,7 @@
         './base/typography';
 
 // Focuses on the macro layout, such as things like: _header.scss, _grid.scss or _forms.scss.
-// @import './layout/';
+@import './layout/grid';
 
 // Focuses on the micro layout, such as widgets like: _media.scss, _thumbnails.scss and _buttons.scss.
 @import './components/button',
