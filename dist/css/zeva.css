@@ -231,43 +231,25 @@ select.input option {
   padding: 2% 0;
   text-align: left;
   border-collapse: collapse; }
-  .table thead tr th {
-    padding: 20px 15px;
-    color: #fff; }
-  .table tbody tr td {
+  .table--bordered th, .table--bordered td {
+    border: 2px solid #fff !important; }
+  .table--borderless th, .table--borderless tr, .table--borderless td {
+    border: none !important; }
+  .table th, .table td {
+    border-bottom: 2px solid #fff;
     padding: 20px 15px; }
-
-.table-right {
-  text-align: right !important; }
-
-.table-center {
-  text-align: center !important; }
-
-.table-filled thead tr th {
-  background: #fff !important;
-  color: #000 !important; }
-
-.table-tbody-filled tbody tr td {
-  background: #fff !important;
-  color: #000 !important; }
-
-.table-bordered thead tr th {
-  border: 2px solid #fff; }
-
-.table-bordered tbody tr td {
-  border: 2px solid #fff; }
-
-.table-bordered-bottom thead tr th {
-  border-bottom: 2px solid #fff; }
-
-.table-bordered-bottom tbody tr td {
-  border-bottom: 2px solid #fff; }
-
-.table-tbody-bordered tbody tr td {
-  border: 2px solid #fff; }
-
-.table-tbody-bordered-bottom tbody tr td {
-  border-bottom: 2px solid #fff; }
+  .table .table__head {
+    color: #fff; }
+    .table .table__head--filled th {
+      background: #fff !important;
+      color: #000 !important; }
+  .table .table__body--filled td {
+    background: #fff !important;
+    color: #000 !important; }
+  .table .table__body--bordered td {
+    border: 2px solid #fff !important; }
+  .table .table__body--borderless td {
+    border: none !important; }
 
 /* Animations */
 .pulse-infinite {
