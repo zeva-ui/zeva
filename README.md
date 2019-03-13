@@ -32,8 +32,8 @@ You have the following options to get zeva:
 
 1. Download a zip file, or clone it from [here](https://github.com/zeva-ui/zeva.git);
 2. Use one of our two CDN links:
-    - [Zeva's regular CSS file](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css) 
-    - [Zeva's minified CSS file](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css).
+    - [Zeva's regular CSS file](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.css) 
+    - [Zeva's minified CSS file](https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.min.css).
 
 ## What's included
 
@@ -56,11 +56,11 @@ zeva/
 ## CDN Usage:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.css">
 
 <!-- Or you could try to use the minified version -->
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.min.css">
 ```
 
 ## Zip Usage: CSS files
