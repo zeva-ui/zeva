@@ -10,6 +10,12 @@ body {
   padding: 0px;
   margin: 0px; }
 
+form {
+  width: 100%; }
+
+textarea {
+  display: block; }
+
 h1 small {
   font-size: 1.3rem; }
 
@@ -124,13 +130,6 @@ h6 small {
   .danger-filled i {
     color: #000; }
 
-#container {
-  width: 80vw;
-  padding: 5vh 10vw; }
-
-form {
-  width: 100%; }
-
 .input {
   width: 40%;
   padding: 15px 3%;
@@ -150,31 +149,24 @@ form {
     border-bottom: 1px solid #fff; }
   .input::placeholder {
     color: #fff; }
-  .input option {
+  .input--filled {
+    color: #000;
     background: #fff;
-    color: #000; }
-
-.full {
-  width: 89.5%; }
-
-.bordered {
-  border-radius: 6px;
-  border: 1px solid white; }
-  .bordered:focus {
-    border: 1px solid #fff; }
-
-.input-filled {
-  color: #000;
-  background: #fff;
-  border: 1px solid #000 !important; }
-  .input-filled::placeholder {
-    color: #000 !important; }
-
-.bold {
-  border-width: 2px;
-  font-weight: bold; }
-  .bold:focus {
-    border-bottom: 2px solid #fff; }
+    border: 1px solid #000 !important; }
+    .input--filled::placeholder {
+      color: #000 !important; }
+  .input.h-weight-bold {
+    border-width: 2px;
+    font-weight: bold; }
+    .input.h-weight-bold:focus {
+      border-bottom: 2px solid #fff; }
+  .input.h-border-all {
+    border-radius: 6px;
+    border: 1px solid white; }
+    .input.h-border-all:focus {
+      border: 1px solid #fff; }
+  .input.h-width-full {
+    width: 89.5%; }
 
 .label {
   display: block;
@@ -185,77 +177,64 @@ form {
   color: #fff;
   font-size: 1rem;
   user-select: none; }
-  .label:hover input ~ .checkbox {
-    background-color: white; }
-  .label:hover input ~ .radio {
+  .label:hover input {
     background-color: white; }
   .label input {
     position: absolute;
     opacity: 0;
     cursor: pointer; }
-  .label input:checked ~ .checkbox {
-    background-color: #fff; }
-  .label input:checked ~ .checkbox:after {
-    display: block; }
-  .label input:disabled ~ .checkbox {
-    opacity: 0.5;
-    background-color: white; }
-  .label input:disabled ~ .radio {
-    opacity: 0.5;
-    background-color: white; }
-  .label input:checked ~ .radio {
-    background-color: #fff; }
-  .label input:checked ~ .radio:after {
-    display: block; }
-  .label .radio:after {
-    top: 5px;
-    left: 5px;
-    width: 15px;
-    height: 15px;
-    background: #000;
+    .label input:checked {
+      background-color: #fff; }
+      .label input:checked ~ .checkbox:after,
+      .label input:checked ~ .radio:after {
+        display: block; }
+    .label input:disabled ~ .checkbox,
+    .label input:disabled ~ .radio {
+      opacity: 0.5;
+      background-color: white; }
+  .label .checkbox,
+  .label .radio {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    transition: 0.4s ease-in-out; }
+    .label .checkbox:after,
+    .label .radio:after {
+      content: "";
+      display: none;
+      position: absolute; }
+  .label .checkbox {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    border-radius: 2px; }
+    .label .checkbox:after {
+      left: 9px;
+      top: 4px;
+      width: 5px;
+      height: 10px;
+      border: solid #000;
+      border-width: 0 4px 4px 0;
+      transform: rotate(45deg); }
+  .label .radio {
+    position: absolute;
+    top: 0px;
+    left: 0;
     border-radius: 50%; }
-  .label .checkbox:after {
-    left: 9px;
-    top: 4px;
-    width: 5px;
-    height: 10px;
-    border: solid #000;
-    border-width: 0 4px 4px 0;
-    transform: rotate(45deg); }
+    .label .radio:after {
+      top: 5px;
+      left: 5px;
+      width: 15px;
+      height: 15px;
+      background: #000;
+      border-radius: 50%; }
 
-.checkbox {
-  position: absolute;
-  top: -3px;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: white;
-  border-radius: 2px;
-  transition: 0.4s ease-in-out; }
-  .checkbox:after {
-    content: "";
-    display: none;
-    position: absolute; }
-
-.radio {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: white;
-  border-radius: 50%;
-  transition: 0.4s ease-in-out; }
-  .radio:after {
-    content: "";
-    display: none;
-    position: absolute; }
-
-.select-full {
+select.input.h-width-full {
   width: 95%; }
 
-textarea {
-  display: block; }
+select.input option {
+  background: #fff;
+  color: #000; }
 
 .table {
   width: 100%;

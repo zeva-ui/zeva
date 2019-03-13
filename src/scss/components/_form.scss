@@ -1,13 +1,3 @@
-#container {
-    width: 80vw;
-
-    padding: 5vh 10vw;
-}
-
-form {
-    width: 100%;
-}
-
 .input {
     width: 40%;
 
@@ -40,45 +30,39 @@ form {
         color: $main-color;
     }
 
-    option {
+    &--filled {
+        color: $background;
+
         background: $main-color;
     
-        color: $background;
+        border: 1px solid $background !important;
+    
+        &::placeholder {
+            color: $background !important;
+        }
     }
-}
 
-.full {
-    width: 89.5%;
-}
-
-.bordered {
-    border-radius: 6px;
-    border: 1px solid lighten($main-color, 30%);
-
-    &:focus {
-        border: 1px solid $main-color;
+    &.h-weight-bold {
+        border-width: 2px;
+    
+        font-weight: bold;
+    
+        &:focus {
+            border-bottom: 2px solid $main-color;
+        }
     }
-}
 
-.input-filled {
-    color: $background;
-
-    background: $main-color;
-
-    border: 1px solid $background !important;
-
-    &::placeholder {
-        color: $background !important;
+    &.h-border-all {
+        border-radius: 6px;
+        border: 1px solid lighten($main-color, 30%);
+    
+        &:focus {
+            border: 1px solid $main-color;
+        }
     }
-}
 
-.bold {
-    border-width: 2px;
-
-    font-weight: bold;
-
-    &:focus {
-        border-bottom: 2px solid $main-color;
+    &.h-width-full {
+        width: 89.5%;
     }
 }
 
@@ -96,11 +80,7 @@ form {
     
     user-select: none;
 
-    &:hover input~.checkbox {
-        background-color: lighten($main-color, 20%);
-    }
-
-    &:hover input~.radio {
+    &:hover input {
         background-color: lighten($main-color, 20%);
     }
 
@@ -110,110 +90,93 @@ form {
         opacity: 0;
     
         cursor: pointer;
-    }
 
-    input:checked~.checkbox {
-        background-color: $main-color;
-    }
+        &:checked {
+            background-color: $main-color;
+            
+            ~.checkbox:after,
+            ~.radio:after {
+                display: block;
+            }
+        }
 
-    input:checked~.checkbox:after {
-        display: block;
-    }
-
-    input:disabled~.checkbox {
-        opacity: 0.5;
-    
-        background-color: lighten($main-color, 30%);
-    }
-
-    input:disabled~.radio {
-        opacity: 0.5;
-    
-        background-color: lighten($main-color, 30%);
-    }    
-
-    input:checked~.radio {
-        background-color: $main-color;
-    }
-
-    input:checked~.radio:after {
-        display: block;
-    }
-
-    .radio:after {
-        top: 5px;
-        left: 5px;
-    
-        width: 15px;
-        height: 15px;
-    
-        background: $background;
+        &:disabled~.checkbox,
+        &:disabled~.radio {
+            opacity: 0.5;
         
-        border-radius: 50%
+            background-color: lighten($main-color, 30%);
+        }
     }
+    
+    .checkbox,
+    .radio {
+        height: 25px;
+        width: 25px;
 
-    .checkbox:after {
-        left: 9px;
-        top: 4px;
-    
-        width: 5px;
-        height: 10px;
-    
-        border: solid $background;
-        border-width: 0 4px 4px 0;
+        background-color: lighten($main-color, 30%);
         
-        transform: rotate(45deg);
+        transition: 0.4s ease-in-out;
+
+        &:after {
+            content: "";
+        
+            display: none;
+            position: absolute;
+        }
     }
-}
 
-.checkbox {
-    position: absolute;
-    top: -3px;
-    left: 0;
-
-    height: 25px;
-    width: 25px;
-
-    background-color: lighten($main-color, 30%);
-
-
-    border-radius: 2px;
-    transition: 0.4s ease-in-out;
-
-    &:after {
-        content: "";
-    
-        display: none;
+    .checkbox {
         position: absolute;
+        top: -3px;
+        left: 0;
+
+        border-radius: 2px;
+
+        &:after {
+            left: 9px;
+            top: 4px;
+        
+            width: 5px;
+            height: 10px;
+        
+            border: solid $background;
+            border-width: 0 4px 4px 0;
+            
+            transform: rotate(45deg);
+        }
     }
-}
 
-.radio {
-    position: absolute;
-    top: 0px;
-    left: 0;
-
-    height: 25px;
-    width: 25px;
-
-    background-color: lighten($main-color, 30%);
-
-    border-radius: 50%;
-
-    transition: 0.4s ease-in-out;
-
-    &:after {
-        content: "";
-    
-        display: none;
+    .radio {
         position: absolute;
+        top: 0px;
+        left: 0;
+
+        border-radius: 50%;
+
+        &:after {
+            top: 5px;
+            left: 5px;
+        
+            width: 15px;
+            height: 15px;
+        
+            background: $background;
+            
+            border-radius: 50%
+        }
     }
 }
 
-.select-full {
-    width: 95%;
-}
+select {
+    &.input {
+        &.h-width-full {
+            width: 95%;
+        }
 
-textarea {
-    display: block;
+        option {
+            background: $main-color;
+        
+            color: $background;
+        }
+    }
 }
