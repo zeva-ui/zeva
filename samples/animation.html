@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta http-equiv='x-ua-compatible' content='ie=edge'>
+
+        <title>Button Testing Page</title>
+
+        <link rel='stylesheet' href='../dist/css/zeva.css'>
+        <link rel="stylesheet" 
+                href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+                integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+                crossorigin="anonymous">
+
+        <style>
+            /* Styles for demo blocks. Just ignore this code... */
+            .foo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                margin: 25px;
+                padding: 30px;
+
+                width: 150px;
+                height: 150px;
+
+                font-weight: bolder;
+                text-align: center;
+
+                background-color: blueviolet;
+            }
+
+            .foo-container {
+                display: flex;
+
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+
+    <body class="foo-container">
+        <div class="foo h-anim-pulse">single pulse</div>
+        <div class="foo h-anim-pulse h-iteration-infinite">infinite pulse</div>
+        <div class="foo h-anim-pulse--hover">single hover pulse</div>
+        <div class="foo h-anim-pulse--hover h-iteration-infinite">infinite hover pulse</div>
+        <div class="foo h-anim-float">float once</div>
+        <div class="foo h-anim-float h-iteration-infinite">infinite float</div>
+    </body>
+</html>

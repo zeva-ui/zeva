@@ -3,6 +3,13 @@
 // Abstracts like: variables, mixins, functions and others utilities.
 @import './abstracts/variables/variables';
 
+// Helper classess.
+@import './helpers/display',
+        './helpers/text',
+        './helpers/sizing',
+        './helpers/animation',
+        './helpers/border';
+
 // Vendors like: Bootstrap, Normalize and JQuery-UI.
 // @import './vendors/';
 
@@ -11,13 +18,12 @@
         './base/typography';
 
 // Focuses on the macro layout, such as things like: _header.scss, _grid.scss or _forms.scss.
-// @import './layout/';
+@import './layout/grid';
 
 // Focuses on the micro layout, such as widgets like: _media.scss, _thumbnails.scss and _buttons.scss.
 @import './components/button',
         './components/form',
-        './components/table',
-        './components/animation';
+        './components/table';
 
 // Please, don't go through this file. :c
 // @import 'shame-file';
