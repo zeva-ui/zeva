@@ -1,7 +1,9 @@
 @charset 'utf-8';
 
 // Abstracts like: variables, mixins, functions and others utilities.
-@import './abstracts/variables/variables';
+@import './abstracts/variables/manifest',
+        './abstracts/mixins/manifest',
+        './abstracts/functions/manifest';
 
 // Helper classess.
 @import './helpers/display',

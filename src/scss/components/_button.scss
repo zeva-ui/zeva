@@ -35,6 +35,12 @@
         background: $background radial-gradient(circle, transparent 1%, $background 1%) center center/15000%;
     }
 
+    @each $name, $value in $theme-colors {
+        &.-theme-#{$name} {
+            @include button-theme($value, color('black'), $value);
+        }
+    }
+
     &.-size-small {
         padding: 6px 20px;
 
@@ -54,35 +60,6 @@
         .button__icon {
             color: $main-color;
             font-size: 1rem;
-        }
-    }
-
-    &.-theme-danger {
-        background: $background;
-
-        color: $danger;
-
-        border: 2px solid $danger;
-
-        &:disabled {
-            color: lighten($danger, 15%);
-        
-            border: 2px solid lighten($danger, 15%);
-        }
-
-        &:hover {
-            background: $background radial-gradient(circle, transparent 1%, $background 1%) center center/15000%;
-        }
-
-        &:active {
-            background-color: lighten($danger, 30%);
-            background-size: 100%;
-        
-            transition: 0s ease-in-out;
-        }
-
-        .button__icon {
-            color: $danger;
         }
     }
 
@@ -114,34 +91,9 @@
         background: $main-color radial-gradient(circle, transparent 1%, $main-color 1%) center center/15000%;
     }
 
-    &.-theme-danger {
-        background: $danger;
-
-        color: $background;
-
-        border: 2px solid $danger;
-
-        &:disabled {
-            color: $background;
-        
-            border: 2px solid lighten($danger, 15%);
-        
-            background: lighten($danger, 15%);
-        }
-
-        &:hover {
-            background: $danger radial-gradient(circle, transparent 1%, $danger 1%) center center/15000%;
-        }
-
-        &:active {
-            background-color: lighten($danger, 10%);
-            background-size: 100%;
-            
-            transition: 0s ease-in-out;
-        }
-
-        .button__icon {
-            color: $background;
+    @each $name, $value in $theme-colors {
+        &.-theme-#{$name} {
+            @include button-filled-theme($value, $value, color('black'));
         }
     }
 

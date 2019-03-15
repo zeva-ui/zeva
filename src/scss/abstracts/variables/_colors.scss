@@ -1,8 +1,33 @@
 //your main color
 $main-color: #fff;
 
-//the danger button color
-$danger: rgb(236, 47, 79);
-
 //your background color
 $background: #000;
+
+/* General Colors */
+
+$black:    #000 !default;
+$white:    #fff !default;
+
+$colors: () !default;
+
+$colors: map-merge(
+    (
+        "white":       $white,
+        "black":       $black
+    ),
+    $colors
+);
+
+/* Theme Colors */
+
+$danger:    rgb(236, 47, 79) !default;
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+    (
+        "danger":     $danger
+    ),
+    $theme-colors
+);

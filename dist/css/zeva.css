@@ -1,4 +1,6 @@
 /* Manifest file for variables */
+/* General Colors */
+/* Theme Colors */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 .h-display-block {
   display: block; }
@@ -116,18 +118,6 @@ h6 small {
     border: 2px solid white; }
   .button:hover {
     background: #000 radial-gradient(circle, transparent 1%, #000 1%) center center/15000%; }
-  .button.-size-small {
-    padding: 6px 20px;
-    font-size: 0.8rem; }
-    .button.-size-small .button__icon {
-      color: #fff;
-      font-size: 0.6rem !important; }
-  .button.-size-large {
-    padding: 18px 60px;
-    font-size: 1.2rem; }
-    .button.-size-large .button__icon {
-      color: #fff;
-      font-size: 1rem; }
   .button.-theme-danger {
     background: #000;
     color: #ec2f4f;
@@ -143,6 +133,18 @@ h6 small {
       transition: 0s ease-in-out; }
     .button.-theme-danger .button__icon {
       color: #ec2f4f; }
+  .button.-size-small {
+    padding: 6px 20px;
+    font-size: 0.8rem; }
+    .button.-size-small .button__icon {
+      color: #fff;
+      font-size: 0.6rem !important; }
+  .button.-size-large {
+    padding: 18px 60px;
+    font-size: 1.2rem; }
+    .button.-size-large .button__icon {
+      color: #fff;
+      font-size: 1rem; }
   .button .button__icon {
     color: #fff;
     font-size: 0.8rem; }

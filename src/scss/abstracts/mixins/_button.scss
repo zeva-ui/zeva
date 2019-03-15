@@ -1,0 +1,58 @@
+@mixin button-theme($border, $background, $color) {
+    background: $background;
+
+    color: $color;
+
+    border: 2px solid $border;
+
+    &:disabled {
+        color: lighten($color, 15%);
+        border: 2px solid lighten($border, 15%);
+    }
+
+    &:hover {
+        background: $background radial-gradient(circle, transparent 1%, $background 1%) center center/15000%;
+    }
+
+    &:active {
+        background-color: lighten($color, 30%);
+        background-size: 100%;
+        
+        transition: 0s ease-in-out;
+    }
+
+    .button__icon {
+        color: $color;
+    }
+}
+
+@mixin button-filled-theme($border, $background, $color) {
+    background: $background;
+
+    color: $color;
+
+    border: 2px solid $border;
+
+    &:disabled {
+        color: $color;
+    
+        border: 2px solid lighten($border, 15%);
+    
+        background: lighten($background, 15%);
+    }
+
+    &:hover {
+        background: $background radial-gradient(circle, transparent 1%, $background 1%) center center/15000%;
+    }
+
+    &:active {
+        background-color: lighten($background, 10%);
+        background-size: 100%;
+        
+        transition: 0s ease-in-out;
+    }
+
+    .button__icon {
+        color: $color;
+    }
+}
