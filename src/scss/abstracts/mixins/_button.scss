@@ -1,3 +1,4 @@
+
 @mixin button-theme($border, $background, $color) {
     background: $background;
 
@@ -28,9 +29,7 @@
 
 @mixin button-filled-theme($border, $background, $color) {
     background: $background;
-
     color: $color;
-
     border: 2px solid $border;
 
     &:disabled {

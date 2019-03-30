@@ -1,43 +1,35 @@
 .button {
-    color: $main-color;
+    color: var(--text-color);
     font-family: $font;
     font-size: $font-size;
     font-weight: bold;
     text-align: center;
-
-    background: $background;
-
+    background: transparent;
     padding: 14px 35px;
     margin: 10px 15px;
-
-    border: 2px solid $main-color;
+    border: 2px solid;
+    border-color:var(--text-color);
     border-radius: 6px;
     outline: none;
-    
     cursor: pointer;
-    
     transition: 1s ease-in-out;
-
     &:active {
-        background-color: lighten($main-color, 30%);
+        background: var(--text-color);
         background-size: 100%;
-    
         transition: 0s ease-in-out;
     }
 
     &:disabled {
-        color: lighten($main-color, 15%);
-    
-        border: 2px solid lighten($main-color, 15%);
+        cursor: not-allowed;
     }
 
     &:hover {
-        background: $background radial-gradient(circle, transparent 1%, $background 1%) center center/15000%;
+        background: var(--bg-color) radial-gradient(circle, transparent 1%, var(--bg-color) 1%) center center/15000%;
     }
 
     @each $name, $value in $theme-colors {
         &.-theme-#{$name} {
-            @include button-theme($value, color('black'), $value);
+            @include button-theme($value, transparent, $value);
         }
     }
 
@@ -47,7 +39,7 @@
         font-size: $font-size-small;
 
         .button__icon {
-            color: $main-color;
+            color: var(--text-color);
             font-size: 0.6rem !important;
         }
     }
@@ -58,47 +50,44 @@
         font-size: $font-size-big;
 
         .button__icon {
-            color: $main-color;
+            color: var(--text-color);
             font-size: 1rem;
         }
     }
 
     .button__icon {
-        color: $main-color;
+        color: var(--text-color);
         font-size: 0.8rem;
     }
 }
 
 .button--filled {
-    background: $main-color;
-
-    color: $background;
+    background: var(--text-color);
+    color: var(--bg-color);
 
     &:active {
-        background-color: lighten($main-color, 10%);
+        background-color: var(--text-color);
         background-size: 100%;
     
         transition: 0s ease-in-out;
     }
 
     &:disabled {
-        color: $background;
-    
-        background: lighten($main-color, 15%);
+        cursor: not-allowed;
     }
 
     &:hover {
-        background: $main-color radial-gradient(circle, transparent 1%, $main-color 1%) center center/15000%;
+        background: var(--text-color) radial-gradient(circle, transparent 1%, var(--text-color) 1%) center center/15000%;
     }
 
     @each $name, $value in $theme-colors {
         &.-theme-#{$name} {
-            @include button-filled-theme($value, $value, color('black'));
+            @include button-filled-theme($value, $value, var(--bg-color));
         }
     }
 
     .button__icon {
-        color: $background;
+        color: var(--bg-color);
         font-size: 0.8rem;
     }
 }

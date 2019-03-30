@@ -9,7 +9,7 @@
 
     &--bordered {
         th, td {
-            border: 2px solid $main-color !important;
+            border: 2px solid var(--text-color) !important;
         }
     }
 
@@ -20,18 +20,18 @@
     }
     
     th, td {
-        border-bottom: 2px solid $main-color;
+        border-bottom: 2px solid var(--text-color);
 
         padding: 20px 15px;
     }
 
     .table__head {
-        color: $main-color;
+        color: var(--text-color);
 
         &--filled {
             th{
-                background: $main-color !important;
-                color: $background !important;
+                background: var(--text-color) !important;
+                color: var(--bg-color) !important;
             }
         }
     }
@@ -39,14 +39,14 @@
     .table__body {
         &--filled {
             td{
-                background: $main-color !important;
-                color: $background !important;
+                background: var(--text-color) !important;
+                color: var(--bg-color) !important;
             }
         }
 
         &--bordered {
             td{
-                border: 2px solid $main-color !important;
+                border: 2px solid var(--text-color) !important;
             }
         }
 

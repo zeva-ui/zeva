@@ -2,15 +2,13 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
+
 body {
     font-family: $font;
-
-    background: $background;
-
-    color: $main-color;
-    
     padding: 0px;
     margin: 0px;
+    color:var(--text-color);
+    background:var(--bg-color);
 }
 
 form {

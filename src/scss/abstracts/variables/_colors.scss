@@ -1,33 +1,33 @@
-//your main color
-$main-color: #fff;
-
-//your background color
-$background: #000;
-
 /* General Colors */
+$black:#000 !default;
+$white:#fff !default;
+$danger: rgb(250, 60, 50) !default;
+$warn: rgb(250, 220, 90) !default;
+$sucess: rgb(80, 255, 100) !default;
 
-$black:    #000 !default;
-$white:    #fff !default;
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+}
+
+$background: red;
+$main-color: blue;
 
 $colors: () !default;
-
 $colors: map-merge(
     (
-        "white":       $white,
-        "black":       $black
+        "white":$white,
+        "black":$black
     ),
     $colors
 );
 
-/* Theme Colors */
-
-$danger:    rgb(236, 47, 79) !default;
-
 $theme-colors: () !default;
-
 $theme-colors: map-merge(
     (
-        "danger":     $danger
+        "danger":  $danger,
+        "warn":  $warn,
+        "sucess":  $sucess
     ),
     $theme-colors
 );
