@@ -258,29 +258,29 @@ h6 small {
   color: #fadc5a;
 }
 
-.button.-theme-sucess {
+.button.-theme-success {
   background: transparent;
   color: #50ff64;
   border: 2px solid #50ff64;
 }
 
-.button.-theme-sucess:disabled {
+.button.-theme-success:disabled {
   color: #9dffa8;
   border: 2px solid #9dffa8;
 }
 
-.button.-theme-sucess:hover {
+.button.-theme-success:hover {
   background: transparent radial-gradient(circle, transparent 1%, transparent 1%) center center/15000%;
 }
 
-.button.-theme-sucess:active {
+.button.-theme-success:active {
   background-color: #e9ffec;
   background-size: 100%;
   -webkit-transition: 0s ease-in-out;
   transition: 0s ease-in-out;
 }
 
-.button.-theme-sucess .button__icon {
+.button.-theme-success .button__icon {
   color: #50ff64;
 }
 
@@ -383,30 +383,30 @@ h6 small {
   color: var(--bg-color);
 }
 
-.button--filled.-theme-sucess {
+.button--filled.-theme-success {
   background: #50ff64;
   color: var(--bg-color);
   border: 2px solid #50ff64;
 }
 
-.button--filled.-theme-sucess:disabled {
+.button--filled.-theme-success:disabled {
   color: var(--bg-color);
   border: 2px solid #9dffa8;
   background: #9dffa8;
 }
 
-.button--filled.-theme-sucess:hover {
+.button--filled.-theme-success:hover {
   background: #50ff64 radial-gradient(circle, transparent 1%, #50ff64 1%) center center/15000%;
 }
 
-.button--filled.-theme-sucess:active {
+.button--filled.-theme-success:active {
   background-color: #83ff91;
   background-size: 100%;
   -webkit-transition: 0s ease-in-out;
   transition: 0s ease-in-out;
 }
 
-.button--filled.-theme-sucess .button__icon {
+.button--filled.-theme-success .button__icon {
   color: var(--bg-color);
 }
 
