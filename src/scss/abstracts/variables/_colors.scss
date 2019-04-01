@@ -3,7 +3,7 @@ $black:#000 !default;
 $white:#fff !default;
 $danger: rgb(250, 60, 50) !default;
 $warn: rgb(250, 220, 90) !default;
-$sucess: rgb(80, 255, 100) !default;
+$success: rgb(80, 255, 100) !default;
 
 :root {
   --bg-color: #000;
@@ -27,7 +27,7 @@ $theme-colors: map-merge(
     (
         "danger":  $danger,
         "warn":  $warn,
-        "sucess":  $sucess
+        "success":  $success
     ),
     $theme-colors
 );
