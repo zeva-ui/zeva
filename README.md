@@ -43,14 +43,12 @@ Within the download you'll find the following directories and files, logically g
 zeva/
 └── dist/
     └── css/
-        ├── zeva-inverse.css
-        ├── zeva-inverse.css.map
-        ├── zeva-inverse.min.css
-        ├── zeva-inverse.min.css.map
         ├── zeva.css
         ├── zeva.css.map
         ├── zeva.min.css
         └── zeva.min.css.map
+    └── js/
+        └── index.min.js
 ```
 
 ## CDN Usage:
@@ -111,15 +109,6 @@ All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-
 Editor preferences are available in the [editor config](https://github.com/zeva-ui/zeva/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
 # Styling Guide
-
-## Basic stuff
-
-```sass
-$main-color:#fff;
-$danger: rgb(236, 47, 79);
-$font: 'Poppins', sans-serif;
-$background:#000;
-```
 
 ## Font size
 
