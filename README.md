@@ -123,8 +123,8 @@ $font-size-big: 1.2rem;  /* bigger font */
 ```sass
 yourcomponent {
     font-family:$font;
-    background:$background;
-    color:$main-color;
+    background:var(--bg-color);
+    color:var(--text-color);
     padding:0px;
     margin:0px;
     border-radius: 50% !important; /* for rounded corners*/
