@@ -28,7 +28,7 @@
 
 # Getting Started
 
-You have the following options to get zeva:
+You have the following options to get Zeva:
 
 1. Download a zip file, or clone it from [here](https://github.com/zeva-ui/zeva.git);
 2. Use one of our two CDN links:
