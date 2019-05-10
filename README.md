@@ -17,6 +17,8 @@
     <a href="https://github.com/zeva-ui/zeva/issues/new">Request feature</a>
 </p>
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)](https://github.com/zeva-ui/zeva/releases/tag/v1.0.0) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/hgJ8RHu)
+
 # Table of contents
 
 - [Getting Started](#getting-started)
@@ -351,12 +353,6 @@ All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-
 Editor preferences are available in the [editor config](https://github.com/zeva-ui/zeva/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
 
-# Community
-
-Get updates on Zeva's development and chat with the project maintainers and community members.
-
-[![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/hgJ8RHu)
-
 # Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/zeva-ui/zeva/tags). 
@@ -372,6 +368,3 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * A special thanks for [Billie Thompson](https://gist.github.com/PurpleBooth), for providing a [`README.md` template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2);
 * Repository management inspired by the good ol' boy [Bootstrap](https://github.com/twbs/bootstrap).
-
-# License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
