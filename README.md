@@ -17,7 +17,7 @@
     <a href="https://github.com/zeva-ui/zeva/issues/new">Request feature</a>
 </p>
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)](https://github.com/zeva-ui/zeva/releases/tag/v1.0.0) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/hgJ8RHu)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)](https://github.com/zeva-ui/zeva/releases/tag/v1.0.0) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/BWk5ZUb)
 
 # Table of contents
 
